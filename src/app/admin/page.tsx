@@ -92,13 +92,14 @@ function Th({ children }: { children: React.ReactNode }) {
   )
 }
 
-function Td({ children }: { children: React.ReactNode }) {
+function Td({ children, style }: { children: React.ReactNode; style?: React.CSSProperties }) {
   return (
     <td style={{ padding: '14px 16px', color: 'var(--white)', borderBottom: '1px solid var(--border-soft)', whiteSpace: 'nowrap' }}>
       {children}
     </td>
   )
 }
+
 
 // ─── Action button ─────────────────────────────────────────────
 function ActionBtn({ label, onClick, variant = 'ghost' }: { label: string; onClick?: () => void; variant?: 'ghost' | 'gold' | 'danger' }) {
