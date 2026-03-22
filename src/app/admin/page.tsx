@@ -14,7 +14,6 @@ const STATS = [
   { labelEn: 'Active Employees', value: '91',  change: '+8 this month' },
   { labelEn: 'Revenue (AED)',    value: '195,650', change: '+22,400 this month' },
 ]
-
 const CANDIDATES = [
   { id: 1, name: 'Sara Al-Rashidi',  category: 'Admin & Sales', type: 'Home',   status: 'approved', rating: 4.9, initials: 'SR' },
   { id: 2, name: 'Bilal Chaudhry',   category: '2D Design',     type: 'Office', status: 'approved', rating: 4.8, initials: 'BC' },
@@ -91,7 +90,7 @@ function Th({ children }: { children: React.ReactNode }) {
     </th>
   )
 }
-
+// error is here fixed
 function Td({ children, style }: { children: React.ReactNode; style?: React.CSSProperties }) {
   return (
     <td style={{ padding: '14px 16px', color: 'var(--white)', borderBottom: '1px solid var(--border-soft)', whiteSpace: 'nowrap', ...style }}>
