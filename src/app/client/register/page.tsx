@@ -1,3 +1,4 @@
+// app/clent/register.tsx
 'use client'
 
 import { useState } from 'react'
@@ -30,7 +31,7 @@ const labelStyle = {
 }
 
 export default function RegisterPage() {
-  const { isRTL } = useLanguage()
+  const { t, isRTL } = useLanguage()
   const router = useRouter()
   const [accountType, setAccountType] = useState<AccountType>(null)
   const [authMethod, setAuthMethod] = useState<'email' | 'google'>('email')
@@ -304,17 +305,7 @@ export default function RegisterPage() {
   )
 }
 
-function Field({ label, value, onChange, type = 'text', placeholder, focused, id, onFocus, onBlur }: {
-  label: string
-  value: string
-  onChange: (v: string) => void
-  type?: string
-  placeholder?: string
-  focused: string
-  id: string
-  onFocus: () => void
-  onBlur: () => void
-}) {
+function Field({ label, value, onChange, type = 'text', placeholder, focused, id, onFocus, onBlur }: any) {
   return (
     <div>
       <label style={labelStyle}>{label}</label>
