@@ -22,7 +22,7 @@ export default function Hero() {
   ]
 
   return (
-    <section style={{
+    <section  style={{
       minHeight: '100vh',
       display: 'grid',
       placeItems: 'center',

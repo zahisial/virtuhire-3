@@ -106,9 +106,9 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '12px' }}>
               {[
                 { key: 'footer.email', href: 'mailto:hello@virtuhire.ae' },
-                { key: 'footer.whatsapp', href: '#' },
-                { key: 'footer.linkedin', href: '#' },
-                { key: 'footer.support', href: '#' },
+                { key: 'footer.whatsapp', href: 'https://wa.me/971XXXXXXXXX' }, // replace with your WhatsApp number
+                { key: 'footer.linkedin', href: 'https://linkedin.com/company/virtuhire' },
+                { key: 'footer.support', href: '/client/dashboard?tab=support' }, // or your support page
               ].map(item => (
                 <li key={item.key}>
                   <a href={item.href} style={{
